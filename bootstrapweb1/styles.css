@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #6c757d; 
+    --accent-color: #28a745; 
+    --background-color: #f8f9fa; 
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important; 
+}
+
+.card {
+    border: none; 
+    box-shadow: 0 4px 6px rgba(0,0,0,.1); 
+}
+
+.card-title {
+    color: var(--primary-color); 
+}
+
+#register {
+    background-color: var(--accent-color); 
+    color: white;
+}
+
+.btn-light {
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+/* Custom Media Queries for TechWorld */
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 18px; 
+    }
+    .card {
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjustments for small devices */
+    h2 {
+        font-size: 20px; /* Smaller headings on very small screens */
+    }
+    .modal-dialog {
+        margin: 20px;
+    }
+}
+
